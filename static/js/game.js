@@ -20,6 +20,8 @@ function startNewGame() {
                 hintPoints: data.hint_points
             };
             updateUI();
+            document.getElementById('message').textContent = '';
+            document.getElementById('word-input').value = '';
         });
 }
 
@@ -98,6 +100,7 @@ function getHint() {
 
 document.addEventListener('DOMContentLoaded', () => {
     startNewGame();
+    document.getElementById('new-game-button').addEventListener('click', startNewGame);
     document.getElementById('submit-word').addEventListener('click', submitWord);
     document.getElementById('hint-button').addEventListener('click', getHint);
     document.getElementById('word-input').addEventListener('keypress', (e) => {

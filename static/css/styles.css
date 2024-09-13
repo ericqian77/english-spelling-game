@@ -57,6 +57,15 @@ button:hover {
     background-color: #45a049;
 }
 
+#new-game-button {
+    margin-bottom: 20px;
+    background-color: #2196F3;
+}
+
+#new-game-button:hover {
+    background-color: #1976D2;
+}
+
 #hint-area {
     margin-bottom: 20px;
 }
