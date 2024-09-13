@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Spelling Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>English Spelling Game</h1>
+        <div id="theme"></div>
+        <div id="grid" class="grid"></div>
+        <div id="input-area">
+            <input type="text" id="word-input" placeholder="Type a word">
+            <button id="submit-word">Submit</button>
+        </div>
+        <div id="hint-area">
+            <button id="hint-button">Get Hint (3 points)</button>
+            <span id="hint-points"></span>
+        </div>
+        <div id="stats">
+            <span id="attempts">Attempts: 0</span>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>
